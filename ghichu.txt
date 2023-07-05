@@ -1,0 +1,1 @@
+left = 0 và right = 0 ứng với width = 100% 
