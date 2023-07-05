@@ -1,1 +1,7 @@
 left = 0 và right = 0 ứng với width = 100% 
+
+bottom: initial; hủy bỏ bottom ban đầu
+
+để đơn vị % sẽ đỡ bị cứng phần tử khi thu nhỏ trình duyệt
+
+flex-shrink: 0; sẽ ko bị co lại
