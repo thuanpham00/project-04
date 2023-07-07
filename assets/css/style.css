@@ -1207,60 +1207,73 @@ a {
 }
 
 /* footer */
+.footer {
+    background: linear-gradient(to right, #fff6ed 43%, transparent 42%);
+}
+
 .footer__inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 129px;
+    display: flex;
 }
 
-.footer-left {
+.footer__left {
+    width: 42%;
     padding: 114px 0 148px;
-    background: #fff6ed;
 }
 
-.footer-form {
+.search-form {
     margin-top: 35px;
     display: flex;
-    position: relative;
-}
-
-.footer-form__input {
+    align-items: center;
+    justify-content: space-between;
     width: 268px;
     height: 46px;
-    border-radius: 23px;
     border: 1px solid rgba(255, 91, 46, 0.25);
     background: #fff;
+    border-radius: 99px;
+}
+
+.search-form__input {
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
     color: #656689;
     font-size: 1.2rem;
     font-weight: 300;
-    padding: 16px 22px;
+    padding: 0 22px;
 }
 
-.footer-form__btn {
-    position: absolute;
-    right: 252px;
-    border: none;
+.search-form__submit {
+    margin-right: -1px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 45px;
+    flex-shrink: 0;
+    border: none;
+    width: 46px;
     height: 46px;
     border-radius: 50%;
     background: #ff5b2e;
     border-color: #ff5b2e;
 }
 
-.footer-left__follow {
+.footer__heading {
     margin-top: 68px;
+    color: #000958;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 20px;
 }
 
-.footer-left__group {
+.social__list {
     margin-top: 16px;
     display: flex;
     column-gap: 16px;
 }
 
-.footer-left__item {
+.social__item {
     width: 32px;
     height: 32px;
     background: #fff;
@@ -1270,3 +1283,46 @@ a {
     justify-content: center;
 }
 
+.social__item:hover {
+    opacity: 0.9;
+}
+
+.footer-right {
+    flex: 1;
+    padding: 52px 0 48px;
+}
+
+.footer__row {
+    display: grid;
+    grid-template-columns: auto auto;
+    /* column-gap: 137px;
+    row-gap: 58px; */
+    gap: 58px 137px;
+    padding-left: 129px;
+}
+
+.footer-column__heading {
+    color: #000958;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.footer-column__list {
+    margin-top: 14px;
+}
+
+.footer-column__link {
+    color: #656689;
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
+.footer__copyright {
+    margin: 52px 0 0 22px;
+    color: #656689;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 14px;
+}
